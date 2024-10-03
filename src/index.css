@@ -20,7 +20,7 @@ body{
   flex-direction: column;
   align-items: center;
   gap: 4rem;
-  padding: 20px;
+  
 }
 .header h1{
   font-weight: 300;
@@ -56,6 +56,7 @@ menu>p{
   width: 80%;
 }
 .pizzas{
+  margin-left: 20px;
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -106,7 +107,15 @@ menu>p{
   padding: 20px 30px;
   background-color:rgb(244, 190, 45);
   margin-top: 20px;
+  margin-bottom: 20px;
   font-family: inherit;
   font-size: 15px;
   cursor: pointer;
+}
+.sold-out{
+  color: gray;
+}
+.sold-out img{
+  filter: grayscale();
+  opacity: 0.8;
 }

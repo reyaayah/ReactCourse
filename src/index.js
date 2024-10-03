@@ -73,11 +73,13 @@ function Menu() {
       <p>We serve delicious Pizza in the town.</p>
       {
         numPizzas > 0 ? (
-          <ul className='pizzas'>
-            {pizzaData.map((pizza) => (
-              <Pizza pizzaObj={pizza} key={pizza.name} />
-            ))}
-          </ul>
+          <>
+            <ul className='pizzas'>
+              {pizzaData.map((pizza) => (
+                <Pizza pizzaObj={pizza} key={pizza.name} />
+              ))}
+            </ul>
+          </>
         ) : (
           <p>We're still working on our menu. Please comeback later!</p>
         )
@@ -94,12 +96,12 @@ function Menu() {
 function Pizza({ pizzaObj }) {
   console.log(pizzaObj);
   return (
-    <li className='pizza'>
+    <li className={`pizza ${pizzaObj.soldOut ? "sold-out" : ""}`}>
       <img src={pizzaObj.photoName} alt={pizzaObj.name} />
       <div>
         <h3>{pizzaObj.name}</h3>
         <p>{pizzaObj.ingredients} </p>
-        <span>{pizzaObj.price + 5}</span>
+        <span>{pizzaObj.soldOut ? "SOLD OUT" : pizzaObj.price + 5}</span>
       </div>
     </li>
   )
@@ -108,7 +110,7 @@ function Pizza({ pizzaObj }) {
 function Footer() {
   const hour = new Date().getHours();
   const openHour = 12;
-  const closeHour = 22;
+  const closeHour = 24;
   const isOpen = hour >= openHour && hour <= closeHour;
   console.log(isOpen);
 
