@@ -58,8 +58,8 @@ function Contact() {
     <div className="contact">
       <a href="https://www.facebook.com/reeya.awal.75/"><i class="fa fa-facebook"></i></a>
       <a href="https://www.instagram.com/reya_awal?igsh=MW8xMmNhc2RxMGlpeA=="><i class="fa fa-instagram"></i></a>
-      <i class="fa fa-linkedin"></i>
-      <i class="fa fa-phone"></i>
+      <a href="https://www.linkedin.com/in/reya-awal-591330294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/reyaayah"><i class="fa fa-github"></i></a>
     </div>
   )
 }
