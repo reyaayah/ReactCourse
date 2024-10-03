@@ -1,0 +1,37 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.card{
+  background-color: rgb(237, 234, 234);
+  border: 2px solid rgb(182, 95, 196);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 4px rgb(153, 111, 153);
+  width: 380px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+}
+.skill{
+  border-radius: 8px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-weight: 600;
+}
+.avatarimg img{
+  border-radius: 8px;
+  margin-top: 10px;
+}
+.contact{
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+
+}
