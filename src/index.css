@@ -10,15 +10,17 @@ html{
 body{
   font-family: 'Roboto Mono', sans-serif;
   color: whitesmoke;
-  background-color: rgb(139, 211, 240);
+  background-color: rgb(183, 188, 188);
 }
 .container{
+  background-color: rgb(119, 173, 187);
   max-width: 80rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4rem;
+  padding: 20px;
 }
 .header h1{
   font-weight: 300;
@@ -53,7 +55,12 @@ menu>p{
   line-height: 1.6;
   width: 80%;
 }
-
+.pizzas{
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.8rem;
+}
 .pizza{
   display: flex;
   gap: 3rem;
