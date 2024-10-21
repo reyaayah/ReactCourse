@@ -30,16 +30,32 @@
   padding: 10px;
   align-items: center;
 }
-.list{
-  text-align: center;
+.list {
   background-color: skyblue;
   color: black;
-  padding: 10px;
-  
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: center;
+}
+.list ul {
+  list-style: none;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.2rem;
+  justify-content: center;
+  align-content: start;
 }
 .stats{
   text-align: center;
   background-color: beige;
   color: black;
   padding: 10px;
+}
+button{
+  background: none;
+  border: none;
 }
