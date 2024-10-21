@@ -28,6 +28,9 @@
   background-color: beige;
   color: black;
   padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
   align-items: center;
 }
 .list {
@@ -55,7 +58,30 @@
   color: black;
   padding: 10px;
 }
-button{
+
+
+.add-form button {
+  text-transform: uppercase;
+  background-color: #76c7ad;
+}
+
+button,
+select,
+input {
+  background-color: #81a6a8;
+  color: #151414;
+  font-family: inherit;
+  border: none;
+  border-radius: 10rem;
+  padding: 1rem 3rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.list li button {
+  cursor: pointer;
   background: none;
   border: none;
+  padding: 0.8rem;
+  transform: translateY(2px);
 }
